@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom Styles -->
+    <style>
+        /* General Styles */
+        body {
+            background-color: #FFFFFF; /* white Background */
+            color: #000000; /* black Text */
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Header */
+        .navbar {
+            background-color: #007bff; /* Blue Background */
+            color: white;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+
+        .navbar-toggler {
+            border-color: #0056b3;
+        }
+
+        /* Sections */
+        .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        #home {
+            background: url('pms-image.jpg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+        }
+
+        #home::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay for text visibility */
+        }
+
+        #home .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+        }
+
+        #about, #features, #download {
+            background-color: #343a40; /* Dark Gray Background */
+            color: white;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background-color: #28a745; /* Green */
+            border-color: #28a745;
+        }
+
+        .btn-primary:hover {
+            background-color: #218838; /* Darker Green on Hover */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        footer .footer-links a {
+            color: #ccc;
+            margin: 0 10px;
+        }
+
+        footer .footer-links a:hover {
+            color: white;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#home">PMS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#download">Download</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="content">
+            <h1 class="display-4">Product Management System</h1>
+            <p class="lead">The ultimate tool for managing products, customers, and sales efficiently. PMS simplifies your business operations and gives you full control.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container text-white">
+            <h2 class="text-center">About Product Management System</h2>
+            <p class="mt-4">
+                Product Management System (PMS) is a comprehensive solution designed to streamline product, customer, and sales management processes. 
+                PMS helps businesses keep track of their inventory, manage customer relationships, and monitor sales performance effortlessly.
+                With easy-to-use features and a flexible interface, PMS provides tools for businesses to grow and scale.
+            </p>
+            <p class="mt-3">
+                PMS is built with security and efficiency in mind, allowing users to store data securely while automating key business operations such as
+                product updates, customer management, and sales reporting. Whether you’re a small business or a larger enterprise, PMS adapts to your needs, 
+                giving you the freedom to manage your operations from anywhere.
+            </p>
+            <p class="mt-3">
+                In addition to basic features, PMS offers advanced capabilities such as sales trend analysis, product stock-level alerts, 
+                and customizable workflows to meet the specific needs of your business. With the Product Management System, you can make data-driven 
+                decisions that help you succeed in today’s competitive market.
+            </p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <h2 class="text-center">Features of Product Management System</h2>
+            <div class="row mt-4 text-white">
+                <!-- Basic Features -->
+                <div class="col-md-6">
+                    <h4><i class="fas fa-box"></i> Basic Product Management</h4>
+                    <p>Start by adding and managing all your products in one place. Keep track of stock levels, prices, and descriptions with ease.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4><i class="fas fa-users"></i> Customer Management</h4>
+                    <p>Store and manage all customer information, including contact details, purchase history, and preferences, to enhance customer relationships.</p>
+                </div>
+
+                <!-- Intermediate Features -->
+                <div class="col-md-6 mt-4">
+                    <h4><i class="fas fa-chart-line"></i> Sales Tracking and Analysis</h4>
+                    <p>Monitor sales performance, generate detailed sales reports, and analyze trends to make informed business decisions.</p>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <h4><i class="fas fa-search"></i> Search and Filter</h4>
+                    <p>Easily search and filter through products, customers, and sales records to quickly find the information you need.</p>
+                </div>
+
+                <!-- Advanced Features -->
+                <div class="col-md-6 mt-4">
+                    <h4><i class="fas fa-cogs"></i> Customization and Automation</h4>
+                    <p>Customize workflows and automate repetitive tasks, such as sales order processing and stock level updates.</p>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <h4><i class="fas fa-lock"></i> Data Security and Backup</h4>
+                    <p>Ensure your data is safe with built-in security features and automated backups, giving you peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="section">
+        <div class="container">
+            <h2 class="text-center">Download Product Management System</h2>
+            <p class="lead text-center">Follow these steps to download and install the PMS tool:</p>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h5>Step 1: Download the Installer</h5>
+                    <p>Click the button below to download the installer for Product Management System.</p>
+                    <a href="https://drive.google.com/file/d/1i4sMNWm4PoOgQMkwzyLpwnVMUBRCylAm/view?usp=drive_link" class="btn btn-primary btn-lg" download>
+                        <i class="fas fa-download"></i> Download Now
+                    </a>
+                    <h5 class="mt-5">Step 2: Install the Application</h5>
+                    <p>Once downloaded, follow the on-screen instructions to install the application.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-links">
+            <a href="#">What's new</a>
+            <a href="#">Help</a>
+            <a href="#">Site Index</a>
+            <a href="#">Press Room</a>
+            <a href="#">Advertising</a>
+            <a href="#">Licensing</a>
+            <a href="#">Apps</a>
+        </div>
+        <p>&copy; 2024 PMS. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
